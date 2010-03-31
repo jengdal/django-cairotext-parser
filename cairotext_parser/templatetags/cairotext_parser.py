@@ -62,7 +62,7 @@ class CairoTextParser(template.Node):
             "url": text_img.url,   
         }
         if node.has_key("style"):
-            node["style"] = ";".join(style, node["style"])
+            node["style"] = ";".join((style, node["style"]))
         else:
             node["style"] = style
     
